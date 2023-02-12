@@ -5,6 +5,7 @@ import { ChainId, ThirdwebProvider} from '@thirdweb-dev/react';
 import App from "./App";
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './index.css';
 
 const root  = createRoot(document.getElementById('root'));
 
