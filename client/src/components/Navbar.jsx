@@ -49,7 +49,14 @@ const address = '0xabc'
 
             <img src={menu} alt="menu"
             className="w-[34px] h-[34px] object-contain cursor-pointer"
+            onClick={() => setToggleDrawer((prev) => !prev)}
              />
+
+            <div className={`absolute top-[60px] right-0 left-0 bg-[#1c1c24] z-10 shadow-secondary py-4 `}>
+
+            </div>
+
+
 
           </div>
 
