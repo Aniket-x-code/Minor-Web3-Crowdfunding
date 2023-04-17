@@ -9,4 +9,4 @@ const CountBox = ({ title, value }) => {
   )
 }
 
-export default CountBox
+export default CountBox 
