@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 
 import { useStateContext } from '../context';
 import { money } from '../assets';
-import { CustomButton, FormField,  } from '../components';
+import { CustomButton, FormField, Loader } from '../components';
 import { checkIfImage } from '../utils';
 
 const CreateCampaign = () => {
@@ -42,13 +42,13 @@ const CreateCampaign = () => {
 
   return (
     <div className="bg-[#f1f0f0] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4">
-      {isLoading && ' Loader..'}
+      {isLoading && <Loader />}
       <div className="flex justify-center items-center p-[16px] sm:min-w-[380px] bg-[#f0f0f3] rounded-[10px]">
         <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-black">Start a Campaign now</h1>
       </div>
 
       <form onSubmit={handleSubmit} className="w-full mt-[65px] flex flex-col gap-[30px]">
-        <div className="flex flex-wrap gap-[40px] text-black">
+        <div className="flex flex-wrap gap-[40px]">
           <FormField 
             labelName="Your Name *"
             placeholder="Aman Gupta"
