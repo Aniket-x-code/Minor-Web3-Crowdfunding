@@ -74,7 +74,6 @@ contract CrowdFunding {
 
             allCampaigns[i] = item;
         }
-
         return allCampaigns;
     }
 
