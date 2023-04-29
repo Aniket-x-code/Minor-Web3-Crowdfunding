@@ -1,3 +1,3 @@
 # minor
-web3 crowdfunding platform for minor project
+Web3 Crowdfunding platform for minor project
 
